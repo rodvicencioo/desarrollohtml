@@ -1,2 +1,2 @@
 # desarrollohtml
-curso desarrollo html y css
+Curso Desarrollo HTML y CSS
