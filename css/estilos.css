@@ -1,0 +1,293 @@
+/* Hoja de estilos */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.colores {
+    color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 15%);
+    color: hsl(208, 100%, 74%);
+    color: hsl(208, 100%, 94%);
+    color: hsl(286, 100%, 35%);
+    color: hsl(286, 100%, 65%);
+    color: hsl(286, 100%, 85%);
+}
+
+* {
+    /* margin: 0; */
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: hsl(208, 100%, 94%); /* Color de fondo */
+    color: hsl(208, 100%, 8%); /* Color de la tipografía */
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Estilos para el Header del documento */
+header {
+    background-color: hsl(208, 100%, 8%); /* Color del fondo del header */
+    color: hsl(208, 100%, 94%); /* color de la tipografía */
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    gap: 2rem;
+}
+
+/* Estilos para las secciones / main */
+
+main {
+    padding: 2rem;
+}
+
+section {
+    width: min(62rem, 100%);
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+section h1 {
+    font-size: 3rem; /* 1rem = 16px, tamaño del cuerpo de la tipografía */
+    font-weight: 300; /* grosor del trazo */
+    font-style: normal; /* estilo */
+    text-align: center;
+    margin: 0;
+}
+
+/* Estilos para el Footer del documento */
+footer {
+    background-color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 94%);
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer h1 {
+    font-size: 1rem;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+    display: flex;
+    gap: 1rem;
+}
+
+/* Clase 3 */
+
+/* Modelo de Caja */
+
+.modelo-de-caja {
+    width: 12rem;
+    height: 12rem;
+
+    padding: 2rem; /* 2rem + 8rem + 2rem */
+
+    box-sizing: border-box; /* Importante */
+
+    border: 0.2rem solid hsl(208, 100%, 8%); /* grosor de la línea, estilo, color */
+
+    border-radius: 1rem;
+
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-left: auto;
+
+    /* margin: 0 auto; */
+
+    margin: 1rem auto 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* Clase 4 */
+/*Clase para los links del Header*/
+a.logo:link,
+a.logo:visited {
+    text-decoration: none;
+    color: hsl(286, 100%, 65%);
+}
+
+a.logo:hover,
+a.logo:active {
+    color: hsl(286, 100%, 85%)
+}
+
+a.header:link,
+a.header:visited {
+    text-decoration: none;
+    color: hsl(208, 100%, 94%);
+}
+
+a.header:hover,
+a.header:active {
+    color: hsl(286, 100%, 65%);
+}
+
+/* Clase para los links del Main */
+a:link, 
+a:visited {
+    color: hsl(286, 100%, 35%);
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: hsl(286, 100%, 65%);
+}
+
+/* Clase para los links del Footer */
+a.footer:link,
+a.footer:visited {
+    text-decoration: none;
+    color: hsl(286, 100%, 65%);
+}
+
+a.footer:hover,
+a.footer:active {
+    color: hsl(286, 100%, 85%);
+}
+
+/* Flexbox */
+.contenedor-flex {
+    padding: 1rem;
+
+    display: flex; /* Activa flexbox en el contenedor */
+
+    flex-direction: row; /* controla la dirección del eje principal */
+    justify-content: center; /* controla el eje principal */
+    align-items: center ; /* controla el eje secundario */
+
+    gap: 2rem; /* Separación entre los elementos */
+}
+
+.item {
+    border: 0.2rem solid hsl(208, 100%, 8%);
+    padding: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:hover {
+    background-color: hsl(286, 100%, 65%);
+}
+
+/* Clase 5 */
+#bienvenida {
+    background-image: url('../img/bienvenida.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 32rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 0;
+}
+
+#bienvenida h1 {
+    color: hsl(208, 100%, 94%);
+    background-color: hsla(208, 100%, 8%, 0.671);
+    padding: 1rem 0;
+}
+
+/* Ejercicio novedades */
+
+/* #novedades img {
+    width: 100%;
+} */
+
+.contenedor-novedades {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 1rem;
+}
+
+article {
+    width: 12rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0.5rem;
+}
+
+.contenedor-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+article h2,
+article h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+article h3 {
+    font-weight: 400;
+}
+
+a.btn-outline:link,
+a.btn-outline:visited {
+    font-size: 0.8rem;
+    color: hsl(208, 100%, 8%);
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+a.btn-outline:hover {
+    color: hsl(286, 100%, 65%);
+    background-color: hsl(208, 100%, 8%);
+}
+
+a.btn-fill:link,
+a.btn-fill:visited {
+    font-size: 0.8rem;
+    color: hsl(208, 100%, 94%);
+    background-color: hsl(208, 100%, 8%);
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+a.btn-fill:hover,
+a.btn-fill:active {
+    background-color: hsl(208, 100%, 15%);
+    color: hsl(286, 100%, 65%);
+}
